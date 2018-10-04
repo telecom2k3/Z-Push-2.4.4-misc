@@ -1,4 +1,4 @@
-# Z-Push-2.4.4-misc
+# Z-Push-2.4.4-misc/Timezones
 
 New timezones added:
 <pre>
