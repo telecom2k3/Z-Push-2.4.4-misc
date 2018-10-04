@@ -26,7 +26,7 @@ mechanisms thusly:
 2) Modifications of /backend/imap/imap.php, /lib/utils/utils.php, and /include/z_RFC822.php to fully support BCC addressing the bug
 described in ZP-1292. Francisco's orginal method of munging all the recipients together IS preserved using the PHP mail() function.
 This was done to support PHP on Windows.  This BCC implmentaton works for the SMTP mailer.  Operation is identical to that used in
-the Thunderbird Email client.  This function is defined at line 2482, thudaly:
+the Thunderbird Email client.  This function is defined at line 2482, thusly:
 
 <pre>
 		if (empty($toaddr) && $sendingMethod == 'smtp') {
