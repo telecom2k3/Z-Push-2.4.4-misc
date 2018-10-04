@@ -1,4 +1,4 @@
-# Z-Push-2.4.4-misc
+# Z-Push-2.4.4-misc/CalDAV
 
 1) Modification of /backend/caldav/caldav.php to add a sanity-check to not log a nuisance error "A non-numeric value encountered".
 I'm not sure how the code gets there, but there is no action, so might as well bypass the error message.  Modified thusly at line 828:
