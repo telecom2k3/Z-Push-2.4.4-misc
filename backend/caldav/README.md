@@ -1,12 +1,13 @@
 # Z-Push-2.4.4-misc
 
-1) Modification of /backend/caldav/caldav.php to add a sanity-check to not log a nuisanc" error "A non-numeric value encountered".
+1) Modification of /backend/caldav/caldav.php to add a sanity-check to not log a nuisance error "A non-numeric value encountered".
 I'm not sure how the code gets there, but there is no action, so might as well bypass the error message.  Modified thusly at line 828:
 <pre>
  						if (!empty($interval) && (is_integer($interval))) {
                         	$message->reminder = $interval->format("%i") + $interval->format("%h") * 60 + $interval->format("%a") * 60 * 24;
 						}
 </pre>
+
 2) Incorporation of fix associated with ZP-1451 for /backend/caldav/caldav.php:
 Added line: "$message->asbody->type = 2;" beneath the line "$message->asbody->data = StringStreamWrapper::Open($data);" on line 750.
 
