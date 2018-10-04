@@ -10,3 +10,4 @@ HTML_DETOX to make Windows 10 Mail App events more usable. This also fixes a nui
 
 3) Modification of /backend/imap/imap.php to add a valid Message-ID field. Any existing Message-ID value is replaced this new value. This addresses the bug described in ZP=1288. 
 
+4) Modifications of /backend/imap/imap.php, /lib/utils/utils.php, and /include/z_RFC822.php to fully support BCC addressing the bug described in ZP-1292. This functionality requires use of the SMTP mailer.
