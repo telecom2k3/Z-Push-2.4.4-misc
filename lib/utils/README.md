@@ -1,4 +1,6 @@
-# Z-Push-2.4.4-misc/Timezones
+# Z-Push-2.4.4-misc (timezoneutil.php and utils.php)
+
+<b>1. Timezones</b>
 
 New timezones added:
 <pre>
@@ -27,4 +29,12 @@ Pacific/Fakaofo
 Pacific/Kiritimati
 Pacific/Marquesas
 Pacific/Norfolk
+</pre>
+
+<b>2. Utils</b>
+
+Modification of /lib/utils/utils.php line 586 to include the "undisclosed-recipients" and "Undisclosed recipients" headers without
+logging error messages, thusly:
+<pre>
+return (bool) preg_match('#((U|u)ndisclosed[\-\s]recipients:|([a-zA-Z0-9_\-])+(\.([a-zA-Z0-9_\-])+)*@((\[(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5]))\]))|((([a-zA-Z0-9])+(([\-])+([a-zA-Z0-9])+)*\.)+([a-zA-Z])+(([\-])+([a-zA-Z0-9])+)*)|localhost))#', $email);
 </pre>
