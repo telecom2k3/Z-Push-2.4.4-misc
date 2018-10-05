@@ -40,4 +40,5 @@ the Thunderbird Email client.  This function is defined at line 2482, thusly:
 		}
 </pre>
 
+NOTES: <b>2018-10-05:</b> imap.php changed for better case-handling of the BCC header.
 
